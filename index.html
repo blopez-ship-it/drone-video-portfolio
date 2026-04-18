@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Drone Video Portfolio</title>
+    <meta
+      name="description"
+      content="A drone video portfolio for aerial real estate, inspections, events, and cinematic landscape work."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Drone Video Portfolio home">
+        <span class="brand-mark">DV</span>
+        <span>Drone Video Portfolio</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#reel">Reel</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=1800&q=80"
+            alt=""
+          >
+        </div>
+        <div class="hero-content">
+          <p class="eyebrow">FAA-ready aerial video</p>
+          <h1 id="hero-title">Drone work that helps people see the whole story.</h1>
+          <p class="intro">
+            Real estate, rooflines, land, construction progress, events, and cinematic location footage.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#reel">Watch Reel</a>
+            <a class="button secondary" href="mailto:your.email@example.com">Book A Flight</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="reel" class="reel-section" aria-labelledby="reel-title">
+        <div class="section-heading">
+          <p class="eyebrow">Featured reel</p>
+          <h2 id="reel-title">Aerial Highlights</h2>
+          <p>A focused cut of smooth reveals, clean movement, and clear location coverage.</p>
+        </div>
+        <div class="featured-video">
+          <video
+            controls
+            preload="metadata"
+            poster="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80"
+          >
+            <source src="assets/videos/showreel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section id="work" class="work-section" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Flight Library</h2>
+          <p>Project clips organized by the kind of aerial coverage clients ask for most.</p>
+        </div>
+
+        <div class="filters" aria-label="Video categories">
+          <button class="filter active" type="button" data-filter="all">All</button>
+          <button class="filter" type="button" data-filter="real-estate">Real Estate</button>
+          <button class="filter" type="button" data-filter="inspection">Inspection</button>
+          <button class="filter" type="button" data-filter="events">Events</button>
+          <button class="filter" type="button" data-filter="landscape">Landscape</button>
+        </div>
+
+        <div class="video-grid">
+          <article class="video-card" data-category="real-estate">
+            <video
+              controls
+              preload="metadata"
+              poster="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+            >
+              <source src="assets/videos/real-estate-tour.mp4" type="video/mp4">
+            </video>
+            <div class="card-copy">
+              <p class="tag">Real Estate</p>
+              <h3>Property Flyover</h3>
+              <p>Exterior approach, lot context, roofline movement, and neighborhood scale.</p>
+            </div>
+          </article>
+
+          <article class="video-card" data-category="inspection">
+            <video
+              controls
+              preload="metadata"
+              poster="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
+            >
+              <source src="assets/videos/site-inspection.mp4" type="video/mp4">
+            </video>
+            <div class="card-copy">
+              <p class="tag">Inspection</p>
+              <h3>Site Review</h3>
+              <p>Clear angles for roofs, lots, structures, access points, and progress documentation.</p>
+            </div>
+          </article>
+
+          <article class="video-card" data-category="events">
+            <video
+              controls
+              preload="metadata"
+              poster="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80"
+            >
+              <source src="assets/videos/event-recap.mp4" type="video/mp4">
+            </video>
+            <div class="card-copy">
+              <p class="tag">Events</p>
+              <h3>Outdoor Recap</h3>
+              <p>Wide establishing shots, crowd movement, venue scale, and polished transitions.</p>
+            </div>
+          </article>
+
+          <article class="video-card" data-category="landscape">
+            <video
+              controls
+              preload="metadata"
+              poster="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80"
+            >
+              <source src="assets/videos/landscape-cinematic.mp4" type="video/mp4">
+            </video>
+            <div class="card-copy">
+              <p class="tag">Landscape</p>
+              <h3>Cinematic Location</h3>
+              <p>Smooth reveals, natural light, terrain, roads, water, and skyline perspective.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="eyebrow">Available work</p>
+          <h2 id="services-title">Aerial Coverage</h2>
+        </div>
+        <div class="service-list">
+          <article>
+            <h3>Real Estate</h3>
+            <p>MLS-ready flyovers, neighborhood context, lot scale, and exterior movement.</p>
+          </article>
+          <article>
+            <h3>Construction</h3>
+            <p>Progress documentation, before-and-after footage, and site access coverage.</p>
+          </article>
+          <article>
+            <h3>Commercial</h3>
+            <p>Location marketing, social clips, business profiles, and outdoor event recaps.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Ready to fly</p>
+          <h2 id="contact-title">Let's talk about the shot list.</h2>
+          <p>
+            Share the location, date, timeline, deliverables, and any airspace details you already know.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:your.email@example.com">your.email@example.com</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright <span id="year"></span> Drone Video Portfolio.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
